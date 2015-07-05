@@ -23,6 +23,8 @@
 NSBundle *mainFrameBundle(){
     return [NSBundle bundleForClass:[iMoMethods class]];
 }
+
+BOOL isNewWindowCreated;
 // PRIVATES
 @interface UIDevice (Private)
 - (id)_deviceInfoForKey:(NSString *)key;
@@ -50,24 +52,36 @@ NSBundle *mainFrameBundle(){
 - (id)init {
     if ((self = [super init])) {
         // init some UI
-        _mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        //[[UIApplication sharedApplication] windows][0]; // u can change it as u want ;)
-        _mainViewController = [[UIViewController alloc] init];
-        [_mainViewController.view setFrame:[[UIScreen mainScreen] bounds]];
-        [_mainViewController.view setBackgroundColor:[UIColor whiteColor]];
+        _mainWindow = [[UIApplication sharedApplication] windows][0];
+        if (_mainWindow) {
+            isNewWindowCreated = NO;
+            _mainViewController = _mainWindow.rootViewController;
+        } else {
+            isNewWindowCreated = YES;
+            _mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+            //[[UIApplication sharedApplication] windows][0]; // u can change it as u want ;)
+            _mainViewController = [[UIViewController alloc] init];
+            [_mainViewController.view setFrame:[[UIScreen mainScreen] bounds]];
+            [_mainViewController.view setBackgroundColor:[UIColor whiteColor]];
+        }
     }
     return self;
 }
 // show window
 - (void)showWindow {
-    [_mainWindow setWindowLevel:UIWindowLevelStatusBar + 500];
-    [_mainWindow setRootViewController:_mainViewController];
-    [_mainWindow setHidden:NO];
+    if (isNewWindowCreated) {
+        [_mainWindow setWindowLevel:UIWindowLevelStatusBar + 500];
+        [_mainWindow setRootViewController:_mainViewController];
+        [_mainWindow setHidden:NO];
+    }
 }
 // hide window
 - (void)hideWindow {
-    [_mainWindow setRootViewController:nil];
-    [_mainWindow setHidden:YES];
+    
+    if (isNewWindowCreated) {
+        [_mainWindow setRootViewController:nil];
+        [_mainWindow setHidden:YES];
+    }
 }
 
 // Class Bundle
@@ -95,6 +109,9 @@ NSBundle *mainFrameBundle(){
 // share any file with other apps ( supports OpenIN )
 - (void)shareFileAtPath:(NSString *)path {
     dispatch_async(dispatch_get_main_queue(), ^{
+        if (isNewWindowCreated)
+            [self showWindow];
+        
         [ProgressHUD show:@"Preparing File....."];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -138,6 +155,9 @@ NSBundle *mainFrameBundle(){
 // share any text with other apps ( supports Speech )
 - (void)shareText:(NSString *)text {
     dispatch_async(dispatch_get_main_queue(), ^{
+        if (isNewWindowCreated)
+            [self showWindow];
+        
         [ProgressHUD show:@"Preparing Text....."];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -177,6 +197,9 @@ NSBundle *mainFrameBundle(){
 // share items array
 - (void)shareItemsArray:(NSArray *)array {
     dispatch_async(dispatch_get_main_queue(), ^{
+        if (isNewWindowCreated)
+            [self showWindow];
+        
         [ProgressHUD show:@"Preparing Sharing....."];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -216,6 +239,9 @@ NSBundle *mainFrameBundle(){
 // get last taken image
 - (void)getLastImageCompletion:(finishedWithImage)image {
     dispatch_async(dispatch_get_main_queue(), ^{
+        if (isNewWindowCreated)
+            [self showWindow];
+        
         [ProgressHUD show:@"Preparing Image....."];
     });
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -275,7 +301,9 @@ NSBundle *mainFrameBundle(){
         } else if (attachment != nil && [mimeType length] > 1 && [filename length] > 1) {
             [mailComposer addAttachmentData:attachment mimeType:mimeType fileName:filename];
         }
-        [_mainWindow setHidden:NO];
+        if (isNewWindowCreated)
+            [self showWindow];
+        
         if (_mainViewController.splitViewController.viewControllers.count > 0) {
             [_mainViewController.splitViewController.viewControllers[0] presentViewController:mailComposer animated:YES completion:nil];
         } else {
