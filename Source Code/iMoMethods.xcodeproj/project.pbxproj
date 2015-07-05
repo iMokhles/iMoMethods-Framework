@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		43ACA30A1B4869E000AA1550 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 43ACA30B1B4869E000AA1550 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				43ACA3101B4869EE00AA1550 /* ShellScript */,
+			);
+			dependencies = (
+				43ACA30F1B4869EA00AA1550 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		43ACA2C61B4868F100AA1550 /* libiMoMethods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACA2BA1B4868F100AA1550 /* libiMoMethods.a */; };
+		43ACA2E81B48692700AA1550 /* ARSpeechActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACA2D71B48692700AA1550 /* ARSpeechActivity.m */; };
+		43ACA2E91B48692700AA1550 /* iMoMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACA2DA1B48692700AA1550 /* iMoMethods.m */; };
+		43ACA2EA1B48692700AA1550 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACA2DE1B48692700AA1550 /* ProgressHUD.m */; };
+		43ACA2EB1B48692700AA1550 /* TTOpenInAppActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ACA2E01B48692700AA1550 /* TTOpenInAppActivity.m */; };
+		43ACA2F01B48697E00AA1550 /* iMoMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 43ACA2D91B48692700AA1550 /* iMoMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43ACA2F11B48698000AA1550 /* iMoMethodsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 43ACA2EC1B48693300AA1550 /* iMoMethodsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43ACA2F31B48698E00AA1550 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACA2F21B48698E00AA1550 /* UIKit.framework */; };
+		43ACA2F51B48699200AA1550 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACA2F41B48699200AA1550 /* Foundation.framework */; };
+		43ACA2F71B48699600AA1550 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACA2F61B48699600AA1550 /* MobileCoreServices.framework */; };
+		43ACA2F91B48699B00AA1550 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACA2F81B48699B00AA1550 /* MessageUI.framework */; };
+		43ACA2FB1B4869A100AA1550 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACA2FA1B4869A100AA1550 /* CoreGraphics.framework */; };
+		43ACA3541B48B18E00AA1550 /* iMoMethods.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43ACA3531B48B18E00AA1550 /* iMoMethods.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43ACA2C71B4868F100AA1550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43ACA2B21B4868F100AA1550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43ACA2B91B4868F100AA1550;
+			remoteInfo = iMoMethodsFramework;
+		};
+		43ACA30E1B4869EA00AA1550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43ACA2B21B4868F100AA1550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43ACA2B91B4868F100AA1550;
+			remoteInfo = iMoMethodsFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43ACA2BA1B4868F100AA1550 /* libiMoMethods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiMoMethods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43ACA2C51B4868F100AA1550 /* iMoMethodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMoMethodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43ACA2CB1B4868F100AA1550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43ACA2D61B48692700AA1550 /* ARSpeechActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSpeechActivity.h; sourceTree = "<group>"; };
+		43ACA2D71B48692700AA1550 /* ARSpeechActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSpeechActivity.m; sourceTree = "<group>"; };
+		43ACA2D91B48692700AA1550 /* iMoMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMoMethods.h; sourceTree = "<group>"; };
+		43ACA2DA1B48692700AA1550 /* iMoMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iMoMethods.m; sourceTree = "<group>"; };
+		43ACA2DD1B48692700AA1550 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		43ACA2DE1B48692700AA1550 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		43ACA2DF1B48692700AA1550 /* TTOpenInAppActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTOpenInAppActivity.h; sourceTree = "<group>"; };
+		43ACA2E01B48692700AA1550 /* TTOpenInAppActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTOpenInAppActivity.m; sourceTree = "<group>"; };
+		43ACA2EC1B48693300AA1550 /* iMoMethodsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMoMethodsFramework.h; sourceTree = "<group>"; };
+		43ACA2F21B48698E00AA1550 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43ACA2F41B48699200AA1550 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43ACA2F61B48699600AA1550 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		43ACA2F81B48699B00AA1550 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		43ACA2FA1B4869A100AA1550 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43ACA3531B48B18E00AA1550 /* iMoMethods.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iMoMethods.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43ACA2B71B4868F100AA1550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACA2FB1B4869A100AA1550 /* CoreGraphics.framework in Frameworks */,
+				43ACA2F91B48699B00AA1550 /* MessageUI.framework in Frameworks */,
+				43ACA2F71B48699600AA1550 /* MobileCoreServices.framework in Frameworks */,
+				43ACA2F51B48699200AA1550 /* Foundation.framework in Frameworks */,
+				43ACA2F31B48698E00AA1550 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACA2C21B4868F100AA1550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACA2C61B4868F100AA1550 /* libiMoMethods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43ACA2B11B4868F100AA1550 = {
+			isa = PBXGroup;
+			children = (
+				43ACA2FA1B4869A100AA1550 /* CoreGraphics.framework */,
+				43ACA2F81B48699B00AA1550 /* MessageUI.framework */,
+				43ACA2F61B48699600AA1550 /* MobileCoreServices.framework */,
+				43ACA2F41B48699200AA1550 /* Foundation.framework */,
+				43ACA2F21B48698E00AA1550 /* UIKit.framework */,
+				43ACA2BC1B4868F100AA1550 /* iMoMethodsFramework */,
+				43ACA2C91B4868F100AA1550 /* iMoMethodsFrameworkTests */,
+				43ACA2BB1B4868F100AA1550 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43ACA2BB1B4868F100AA1550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43ACA2BA1B4868F100AA1550 /* libiMoMethods.a */,
+				43ACA2C51B4868F100AA1550 /* iMoMethodsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43ACA2BC1B4868F100AA1550 /* iMoMethodsFramework */ = {
+			isa = PBXGroup;
+			children = (
+				43ACA3531B48B18E00AA1550 /* iMoMethods.bundle */,
+				43ACA2EE1B48694400AA1550 /* vendors */,
+				43ACA2EC1B48693300AA1550 /* iMoMethodsFramework.h */,
+				43ACA2D91B48692700AA1550 /* iMoMethods.h */,
+				43ACA2DA1B48692700AA1550 /* iMoMethods.m */,
+			);
+			path = iMoMethodsFramework;
+			sourceTree = "<group>";
+		};
+		43ACA2C91B4868F100AA1550 /* iMoMethodsFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				43ACA2CA1B4868F100AA1550 /* Supporting Files */,
+			);
+			path = iMoMethodsFrameworkTests;
+			sourceTree = "<group>";
+		};
+		43ACA2CA1B4868F100AA1550 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43ACA2CB1B4868F100AA1550 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43ACA2EE1B48694400AA1550 /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				43ACA2D61B48692700AA1550 /* ARSpeechActivity.h */,
+				43ACA2D71B48692700AA1550 /* ARSpeechActivity.m */,
+				43ACA2DD1B48692700AA1550 /* ProgressHUD.h */,
+				43ACA2DE1B48692700AA1550 /* ProgressHUD.m */,
+				43ACA2DF1B48692700AA1550 /* TTOpenInAppActivity.h */,
+				43ACA2E01B48692700AA1550 /* TTOpenInAppActivity.m */,
+			);
+			name = vendors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43ACA2EF1B48697A00AA1550 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACA2F11B48698000AA1550 /* iMoMethodsFramework.h in Headers */,
+				43ACA2F01B48697E00AA1550 /* iMoMethods.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		43ACA2B91B4868F100AA1550 /* iMoMethods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43ACA2CE1B4868F100AA1550 /* Build configuration list for PBXNativeTarget "iMoMethods" */;
+			buildPhases = (
+				43ACA2B61B4868F100AA1550 /* Sources */,
+				43ACA2B71B4868F100AA1550 /* Frameworks */,
+				43ACA3441B486DA100AA1550 /* Resources */,
+				43ACA2EF1B48697A00AA1550 /* Headers */,
+				43ACA3091B4869C200AA1550 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMoMethods;
+			productName = iMoMethodsFramework;
+			productReference = 43ACA2BA1B4868F100AA1550 /* libiMoMethods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		43ACA2C41B4868F100AA1550 /* iMoMethodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43ACA2D11B4868F100AA1550 /* Build configuration list for PBXNativeTarget "iMoMethodsTests" */;
+			buildPhases = (
+				43ACA2C11B4868F100AA1550 /* Sources */,
+				43ACA2C21B4868F100AA1550 /* Frameworks */,
+				43ACA2C31B4868F100AA1550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43ACA2C81B4868F100AA1550 /* PBXTargetDependency */,
+			);
+			name = iMoMethodsTests;
+			productName = iMoMethodsFrameworkTests;
+			productReference = 43ACA2C51B4868F100AA1550 /* iMoMethodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43ACA2B21B4868F100AA1550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Mokhlas Hussein";
+				TargetAttributes = {
+					43ACA2B91B4868F100AA1550 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					43ACA2C41B4868F100AA1550 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					43ACA30A1B4869E000AA1550 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 43ACA2B51B4868F100AA1550 /* Build configuration list for PBXProject "iMoMethods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43ACA2B11B4868F100AA1550;
+			productRefGroup = 43ACA2BB1B4868F100AA1550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43ACA2B91B4868F100AA1550 /* iMoMethods */,
+				43ACA2C41B4868F100AA1550 /* iMoMethodsTests */,
+				43ACA30A1B4869E000AA1550 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43ACA2C31B4868F100AA1550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACA3441B486DA100AA1550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACA3541B48B18E00AA1550 /* iMoMethods.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43ACA3091B4869C200AA1550 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"";
+		};
+		43ACA3101B4869EE00AA1550 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43ACA2B61B4868F100AA1550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43ACA2E91B48692700AA1550 /* iMoMethods.m in Sources */,
+				43ACA2EA1B48692700AA1550 /* ProgressHUD.m in Sources */,
+				43ACA2E81B48692700AA1550 /* ARSpeechActivity.m in Sources */,
+				43ACA2EB1B48692700AA1550 /* TTOpenInAppActivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43ACA2C11B4868F100AA1550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43ACA2C81B4868F100AA1550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43ACA2B91B4868F100AA1550 /* iMoMethods */;
+			targetProxy = 43ACA2C71B4868F100AA1550 /* PBXContainerItemProxy */;
+		};
+		43ACA30F1B4869EA00AA1550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43ACA2B91B4868F100AA1550 /* iMoMethods */;
+			targetProxy = 43ACA30E1B4869EA00AA1550 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43ACA2CC1B4868F100AA1550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		43ACA2CD1B4868F100AA1550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43ACA2CF1B4868F100AA1550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = iMoMethods;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		43ACA2D01B4868F100AA1550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = iMoMethods;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		43ACA2D21B4868F100AA1550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iMoMethodsFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = iMoMethodsTests;
+			};
+			name = Debug;
+		};
+		43ACA2D31B4868F100AA1550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iMoMethodsFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = iMoMethodsTests;
+			};
+			name = Release;
+		};
+		43ACA30C1B4869E000AA1550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43ACA30D1B4869E000AA1550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43ACA2B51B4868F100AA1550 /* Build configuration list for PBXProject "iMoMethods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACA2CC1B4868F100AA1550 /* Debug */,
+				43ACA2CD1B4868F100AA1550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43ACA2CE1B4868F100AA1550 /* Build configuration list for PBXNativeTarget "iMoMethods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACA2CF1B4868F100AA1550 /* Debug */,
+				43ACA2D01B4868F100AA1550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43ACA2D11B4868F100AA1550 /* Build configuration list for PBXNativeTarget "iMoMethodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACA2D21B4868F100AA1550 /* Debug */,
+				43ACA2D31B4868F100AA1550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43ACA30B1B4869E000AA1550 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43ACA30C1B4869E000AA1550 /* Debug */,
+				43ACA30D1B4869E000AA1550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43ACA2B21B4868F100AA1550 /* Project object */;
+}
